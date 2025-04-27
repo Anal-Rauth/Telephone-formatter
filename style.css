@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-image: url("./background image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style and animate the H1 */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+/* Futuristic input style */
+input {
+    width: 250px;
+    padding: 12px 20px;
+    border: 2px solid #00ffe7;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for input */
+input:hover {
+    background: rgba(0, 255, 231, 0.2);
+    border-color: #ffffff;
+    box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+}
+
+/* Focus effect for input */
+input:focus {
+    background: rgba(0, 255, 231, 0.3);
+    border-color: #ffffff;
+    box-shadow: 0 0 15px #00ffe7, 0 0 30px #00ffe7;
+}
+p {
+    margin-top: 1rem;
+    font-weight: bolder;
+    color: cyan;
+}
+/* Keyframes for H1 animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+    }
+}
